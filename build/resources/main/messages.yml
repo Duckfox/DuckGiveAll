@@ -1,0 +1,19 @@
+reload: "插件重载完成！"
+help:
+  - "&e[&6DuckGiveAll&e]&b帮助信息"
+  - "&6/DuckGiveAll(dga) &egiveall &7[%main_hand%&e|&7%off_hand%|%both_hands%]&6 | &7[-m:material] [-a:amount] [-d:data] [-nbt:nbt]"
+unknownCommand: "未知指令%command%，请输入/dga help查看帮助信息"
+nothing_in_main_hand: "你的主手没有物品。"
+nothing_in_off_hand: "你的副手没有物品。"
+
+give_item_to_player: "你将物品 <item></item> 给予玩家 %player%。"
+give_item_to_all: "你将物品 <item></item> 给予所有玩家。"
+claim_item: "玩家 %giver% 给予了你物品 <item></item>。"
+
+no_item_data: "请输入物品数据。"
+material_invalid: "%material% 不是有效材质。"
+amount_invalid: "数量 %amount% 无效。"
+data_invalid: "数据 %data% 无效。"
+nbt_invalid: "NBT %nbt% 数据无效。"
+
+item_style: "&e[&b%item% × %amount%&e]"

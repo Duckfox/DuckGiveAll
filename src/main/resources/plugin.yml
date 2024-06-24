@@ -1,0 +1,8 @@
+name: DuckGiveAll
+version: '${version}'
+main: com.duckfox.duckgiveall.DuckGiveAll
+depend: [DuckAPI]
+authors: [Duck_fox]
+commands:
+  duckgiveall:
+    aliases: dga
