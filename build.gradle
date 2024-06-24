@@ -15,12 +15,16 @@ repositories {
         name = "sonatype"
         url = "https://oss.sonatype.org/content/groups/public/"
     }
+    maven {
+        name = "jitpack"
+        url = "https://www.jitpack.io"
+    }
 }
 
 dependencies {
     compileOnly "org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT"
     compileOnly fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation 'com.github.Duckfox:DuckAPI:2.6'
 }
 
 def targetJavaVersion = 8
