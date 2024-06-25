@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/DuckGiveAll.main.iml" filepath="$PROJECT_DIR$/.idea/modules/DuckGiveAll.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DuckGiveAll.test.iml" filepath="$PROJECT_DIR$/.idea/modules/DuckGiveAll.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.DuckGiveAll.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.DuckGiveAll.main.iml" />
     </modules>
   </component>

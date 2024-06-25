@@ -1,0 +1,8 @@
+*.class
+*.log
+*.lock
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+build
+.idea
+Pull-Commit-Push.bat

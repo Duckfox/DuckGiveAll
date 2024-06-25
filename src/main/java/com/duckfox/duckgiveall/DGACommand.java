@@ -5,15 +5,21 @@ import com.duckfox.duckapi.utils.NMSUtil;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
+import net.md_5.bungee.api.chat.TranslatableComponent;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.nbt.JsonToNBT;
 import net.minecraft.nbt.NBTException;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.util.text.TextComponentUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -203,6 +209,10 @@ public class DGACommand implements CommandExecutor {
             itemStack = NMSUtil.NMSToBKTItemStack(nmsItemStack);
         }
         return itemStack;
+    }
+    private ITextComponent getTranslatedName(ItemStack itemStack){
+        TextComponentTranslation components = new TextComponentTranslation(NMSUtil.BKTToNMSItemStack(itemStack).func_77977_a());
+        return components;
     }
 
     private void giveItem(CommandSender giver, Player player, List<ItemStack> itemStacks, boolean notice) {
