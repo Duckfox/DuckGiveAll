@@ -25,6 +25,7 @@ dependencies {
     implementation 'com.duckfox:duckapi:+'
     implementation 'org.catmc:catserversrg:11c12cd'
 
+
 }
 
 def targetJavaVersion = 8
